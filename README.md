@@ -1,7 +1,17 @@
 # ML-cite-training
 
-Fine-tune BERT on the natural [ML-cite dataset](https://huggingface.co/datasets/gt-csse/ML-cite-training)
-to extract case name, court, date/year and pin cite as spans or absence.
+ML-cite is an independent project developing machine learning methods for
+legal citation extraction. Our companion project,
+[mellea-lrc](https://github.com/gt-csse/mellea-lrc), checks citation identities
+and whether cited sources support the associated claims.
+
+This is the **training repository** for the natural
+[ML-cite dataset](https://huggingface.co/datasets/gt-csse/ML-cite-training).
+It fine-tunes BERT to extract case name, court, date/year and pin cite as
+spans or absence.
+
+Span annotations can be difficult to read as raw offsets. Browse them in the
+[ML-cite visualization](https://mellea-lrc-visualizer.woodygoodenough.com/dataset?dataset=ml-cite).
 
 The dataset is currently **private**, with public release planned soon.
 Until then, your Hugging Face account needs dataset access. Once it is public,
