@@ -28,3 +28,10 @@ uv run --locked train.py
 Use a Hugging Face token with read access when prompted. `uv` installs the
 dependencies automatically. The script downloads the training/development
 data and saves the trained model and run records in `runs/bert/`.
+
+To verify that a complete local dataset release's document annotations reproduce
+its prepared train/dev/test files byte for byte:
+
+```bash
+uv run python tools/convert_training.py --release /path/to/ML-cite --verify
+```
